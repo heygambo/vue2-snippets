@@ -7,42 +7,34 @@
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex'
+${2:import \{ mapGetters, mapActions \} from 'vuex'}
 
 export default {
-  name: '${2:${TM_FILENAME/(.+)\..+|.*/$1/:MyComponent}}',
-
-  ${3:props: \{\},}
-
-  ${4:mixins: [],}
-
-  ${5:components: \{\},}
-
-  ${6:data () {
+  name: '${3:${TM_FILENAME/(.+)\..+|.*/$1/:MyComponent}}',
+  ${4:props: \{\},}
+  ${5:mixins: [],}
+  ${6:components: \{\},}
+  ${7:data () {
     return \{\}
   \},}
-
-  ${7:computed: \{
+  ${8:computed: \{
     ...mapGetters([
       'getter'
     ])
   \},}
-
-  ${8:methods: \{
-    ${9:...mapActions([
+  ${9:methods: \{
+    ${10:...mapActions([
       'action'
     ]),}
-
-    ${10:created () \{\},}
-
-    ${11:mounted () {
+    ${11:created () \{\},}
+    ${12:mounted () {
       this.\$nextTick(() => \{\})
     \}}
   \}}
 }
 </script>
 
-<style lang="${12:sass}" ${13:scoped}>
+<style lang="${13:sass}" ${14:scoped}>
 .${1:my-component}
 
 </style>
