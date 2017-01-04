@@ -1,0 +1,54 @@
+<snippet>
+  <content><![CDATA[
+<template>
+  <div class="${1:my-component}">
+
+  </div>
+</template>
+
+<script>
+import { mapGetters, mapActions } from 'vuex'
+
+export default {
+  name: '${2:${TM_FILENAME/(.+)\..+|.*/$1/:MyComponent}}',
+
+  ${3:props: \{\},}
+
+  ${4:mixins: [],}
+
+  ${5:components: \{\},}
+
+  ${6:data () {
+    return \{\}
+  \},}
+
+  ${7:computed: \{
+    ...mapGetters([
+      'getter'
+    ])
+  \},}
+
+  ${8:methods: \{
+    ${9:...mapActions([
+      'action'
+    ]),}
+
+    ${10:created () \{\},}
+
+    ${11:mounted () {
+      this.\$nextTick(() => \{\})
+    \}}
+  \}}
+}
+</script>
+
+<style lang="${12:sass}" ${13:scoped}>
+.${1:my-component}
+
+</style>
+
+]]></content>
+  <tabTrigger>vuec</tabTrigger>
+  <scope>text.html.vue</scope>
+  <description>Vue component</description>
+</snippet>

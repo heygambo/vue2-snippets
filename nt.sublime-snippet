@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+this.\$nextTick(() => {
+  $1
+})
+]]></content>
+  <tabTrigger>nt</tabTrigger>
+  <scope>text.html.vue</scope>
+  <description>Vue component</description>
+</snippet>
